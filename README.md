@@ -250,6 +250,22 @@ Fitur yang tersedia pada GUI:
 
 ---
 
+## Documentation
+
+User Manual:
+
+- docs/Buku_Manual_Aplikasi.docx
+
+This document contains:
+- Installation guide
+- Application usage
+- Audio mode
+- Visual mode
+- Fusion mode
+- Troubleshooting
+
+---
+
 ## Pengembang
 
 **M. Afif Fuadie Yusuf**
