@@ -250,6 +250,30 @@ Fitur yang tersedia pada GUI:
 
 ---
 
+# Screenshot Aplikasi
+
+## Tampilan Menu Utama
+
+![Menu Utama](docs/menu_utama.png)
+
+## Mode Audio
+
+![Mode Audio](docs/mode_audio.png)
+
+## Mode Visual
+
+![Mode Visual](docs/mode_visual.png)
+
+## Mode Fusion
+
+![Mode Fusion](docs/mode_fusion.png)
+
+## Pengaturan Output Suara
+
+![Sound Setting](docs/sound_setting.png)
+
+---
+
 ## Documentation
 
 User Manual:
