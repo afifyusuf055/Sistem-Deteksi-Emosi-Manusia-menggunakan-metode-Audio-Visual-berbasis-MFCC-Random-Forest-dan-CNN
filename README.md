@@ -219,13 +219,16 @@ Metode:
 - Random Forest
 
 Akurasi:
-- 77.04%
+- 70.37%
 
 ### Model Visual
 
 Metode:
 - CNN
 - FER2013 Dataset
+
+Akurasi:
+- 77.84%
 
 ### Model Fusion
 
