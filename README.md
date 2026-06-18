@@ -219,13 +219,16 @@ Metode:
 - Random Forest
 
 Akurasi:
-- 77.04%
+- 70.37%
 
 ### Model Visual
 
 Metode:
 - CNN
 - FER2013 Dataset
+
+Akurasi:
+- 77.84%
 
 ### Model Fusion
 
@@ -244,6 +247,22 @@ Fitur yang tersedia pada GUI:
 - Bounding Box Wajah
 - Pemilihan Mikrofon
 - Sound ON/OFF
+
+---
+
+## Documentation
+
+User Manual:
+
+- docs/Buku_Manual_Aplikasi.docx
+
+This document contains:
+- Installation guide
+- Application usage
+- Audio mode
+- Visual mode
+- Fusion mode
+- Troubleshooting
 
 ---
 
