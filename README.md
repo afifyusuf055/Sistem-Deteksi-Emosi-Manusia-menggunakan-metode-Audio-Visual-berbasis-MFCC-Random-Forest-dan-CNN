@@ -1,17 +1,17 @@
-# Sistem Deteksi Emosi Manusia Menggunakan Metode Audio-Visual Berbasis MFCC, Random Forest, dan CNN
+# 🎭 Sistem Deteksi Emosi Manusia Menggunakan Metode Audio-Visual Berbasis MFCC, Random Forest, dan CNN
 
-## Deskripsi
+## 📖 Deskripsi
 
-Sistem Deteksi Emosi Manusia merupakan aplikasi berbasis Python yang dirancang untuk mengenali emosi manusia secara real-time menggunakan kombinasi informasi audio dan visual.
+Sistem Deteksi Emosi Manusia merupakan aplikasi berbasis Python yang dirancang untuk mengenali emosi manusia secara **real-time** menggunakan kombinasi informasi **audio** dan **visual**.
 
-Sistem ini mengintegrasikan metode:
+Penelitian ini mengintegrasikan beberapa metode, yaitu:
 
-- Mel Frequency Cepstral Coefficients (MFCC) untuk ekstraksi fitur suara
-- Random Forest untuk klasifikasi emosi berdasarkan audio
-- Convolutional Neural Network (CNN) untuk klasifikasi emosi berdasarkan ekspresi wajah
-- Audio-Visual Fusion untuk menggabungkan hasil prediksi audio dan visual
+- 🎤 **Mel-Frequency Cepstral Coefficients (MFCC)** sebagai metode ekstraksi fitur suara.
+- 🌳 **Random Forest** sebagai algoritma klasifikasi emosi berdasarkan suara.
+- 😊 **Convolutional Neural Network (CNN)** sebagai algoritma klasifikasi emosi berdasarkan ekspresi wajah.
+- 🔀 **Weighted Late Fusion (Decision-Level Fusion)** untuk menggabungkan hasil prediksi audio dan visual sehingga menghasilkan keputusan emosi yang lebih stabil.
 
-Aplikasi mampu mengenali empat kategori emosi yaitu:
+Sistem mampu mengenali empat kategori emosi, yaitu:
 
 - 😄 Happy (Senang)
 - 😠 Angry (Marah)
@@ -20,73 +20,63 @@ Aplikasi mampu mengenali empat kategori emosi yaitu:
 
 ---
 
-## Latar Belakang
+# 🎯 Latar Belakang
 
-Pengenalan emosi manusia merupakan salah satu bidang penting dalam Human Computer Interaction (HCI). Kemampuan sistem untuk memahami kondisi emosional pengguna dapat meningkatkan kualitas interaksi antara manusia dan komputer.
+Pengenalan emosi manusia merupakan salah satu bidang penting dalam **Human Computer Interaction (HCI)**. Kemampuan sistem dalam memahami kondisi emosional pengguna dapat meningkatkan kualitas interaksi antara manusia dan komputer.
 
-Pada penelitian ini dikembangkan sistem deteksi emosi berbasis audio-visual yang memanfaatkan suara dan ekspresi wajah secara bersamaan. Pendekatan multimodal ini diharapkan mampu memberikan hasil deteksi yang lebih akurat dibandingkan penggunaan satu modalitas saja.
-
----
-
-## Fitur Utama
-
-### Mode Visual
-Mendeteksi emosi berdasarkan ekspresi wajah pengguna menggunakan webcam secara real-time.
-
-### Mode Audio
-Mendeteksi emosi berdasarkan suara pengguna menggunakan mikrofon.
-
-### Mode Fusion
-Menggabungkan hasil prediksi audio dan visual untuk memperoleh keputusan emosi yang lebih stabil.
-
-### Real-Time Detection
-Sistem melakukan deteksi secara langsung tanpa proses upload file.
-
-### Voice Feedback
-Aplikasi dapat memberikan output suara sesuai emosi yang terdeteksi.
+Pada penelitian ini dikembangkan sistem deteksi emosi berbasis **audio-visual** yang memanfaatkan suara dan ekspresi wajah secara bersamaan sehingga diharapkan mampu memberikan hasil deteksi yang lebih akurat dibandingkan penggunaan satu modalitas saja.
 
 ---
 
-## Metode Penelitian
+# ✨ Fitur Utama
 
-### Audio Processing
-
-1. Akuisisi suara menggunakan mikrofon
-2. Ekstraksi fitur menggunakan MFCC
-3. Normalisasi fitur menggunakan StandardScaler
-4. Klasifikasi menggunakan Random Forest
-
-### Visual Processing
-
-1. Akuisisi citra menggunakan webcam
-2. Deteksi wajah menggunakan Haar Cascade
-3. Preprocessing citra wajah
-4. Klasifikasi menggunakan CNN
-
-### Audio-Visual Fusion
-
-Prediksi audio dan visual digabungkan menggunakan metode voting untuk menghasilkan keputusan emosi akhir.
+- 🎤 Deteksi emosi berbasis Audio (MFCC + Random Forest)
+- 📷 Deteksi emosi berbasis Visual (CNN)
+- 🔀 Mode Fusion Audio-Visual
+- ⚡ Deteksi emosi secara Real-Time
+- 😊 Menampilkan hasil prediksi emosi
+- 📊 Menampilkan Confidence Score
+- 🎯 Bounding Box Detection
+- 🎙️ Pemilihan Microphone
+- 🔊 Speaker ON / OFF
+- 📜 Riwayat Prediksi
 
 ---
 
-## Dataset
+# 🧠 Metode Penelitian
 
-### Dataset Audio
+## Audio Processing
 
-RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song)
+1. Akuisisi suara menggunakan microphone.
+2. Preprocessing audio.
+3. Ekstraksi fitur menggunakan MFCC.
+4. Normalisasi fitur menggunakan StandardScaler.
+5. Klasifikasi menggunakan Random Forest.
 
-Emosi yang digunakan:
+---
 
-- Angry
-- Happy
-- Neutral
-- Sad
+## Visual Processing
 
-### Dataset Visual
+1. Akuisisi citra menggunakan webcam.
+2. Deteksi wajah menggunakan Haar Cascade.
+3. Preprocessing citra wajah.
+4. Klasifikasi menggunakan CNN.
 
-FER2013 (Facial Expression Recognition 2013)
+---
 
-Emosi yang digunakan:
+## Audio-Visual Fusion
+
+Prediksi audio dan visual digabungkan menggunakan metode **Weighted Late Fusion (Decision-Level Fusion)** sehingga menghasilkan keputusan emosi yang lebih stabil.
+
+---
+
+# 📂 Dataset
+
+## Dataset Audio
+
+**RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song)**
+
+Kategori emosi yang digunakan:
 
 - Angry
 - Happy
@@ -95,10 +85,32 @@ Emosi yang digunakan:
 
 ---
 
-## Struktur Project
+## Dataset Visual
+
+**FER2013 (Facial Expression Recognition 2013)**
+
+Kategori emosi yang digunakan:
+
+- Angry
+- Happy
+- Neutral
+- Sad
+
+---
+
+# 📁 Struktur Project
 
 ```text
-Github/
+Sistem-Deteksi-Emosi-Manusia/
+│
+├── docs/
+│   ├── Buku Manual Aplikasi_.docx
+│   ├── gui_app.png
+│   ├── tampilan_menu_utama.png
+│   ├── mode_Audio.png
+│   ├── mode_Visual.png
+│   ├── mode_Fusion.png
+│   └── output_speaker.png
 │
 ├── models/
 │   ├── audio_scaler.pkl
@@ -107,62 +119,64 @@ Github/
 │   ├── haarcascade_frontalface_default.xml
 │   └── speaker.png
 │
+├── results/
+│   ├── confusion_matrix_audio.png
+│   └── confusion_matrix_visual.png
+│
 ├── sounds/
 │   ├── angry.wav
 │   ├── happy.wav
 │   ├── neutral.wav
 │   └── sad.wav
 │
-├── results/
-│   ├── confusion_matrix_audio.png
-│   └── confusion_matrix_visual.png
-│
+├── audio_engine.py
+├── visual_engine.py
+├── fusion_engine.py
+├── gui_app_v2.py
 ├── audio_train.py
-├── audio_test_mic.py
 ├── visual_train.py
-├── visual_test.py
-├── fusion_test.py
-├── gui_app.py
-│
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## Kebutuhan Sistem
+# 💻 Kebutuhan Sistem
 
-### Hardware
+## Hardware
 
+- Laptop / PC
 - Processor Intel Core i3 atau lebih tinggi
 - RAM minimal 4 GB
 - Webcam
-- Mikrofon
+- Microphone
 - Speaker
-
-### Software
-
-- Windows 10 / Windows 11
-- Python 3.10
-- Visual Studio Code (Opsional)
 
 ---
 
-## Instalasi
+## Software
 
-### Clone Repository
+- Windows 10 / Windows 11
+- Python 3.10
+- Visual Studio Code
+
+---
+
+# ⚙️ Instalasi
+
+## Clone Repository
 
 ```bash
 git clone https://github.com/afifyusuf055/Sistem-Deteksi-Emosi-Manusia-menggunakan-metode-Audio-Visual-berbasis-MFCC-Random-Forest-dan-CNN.git
 ```
 
-### Masuk ke Folder Project
+Masuk ke folder project
 
 ```bash
 cd Sistem-Deteksi-Emosi-Manusia-menggunakan-metode-Audio-Visual-berbasis-MFCC-Random-Forest-dan-CNN
 ```
 
-### Install Dependency
+Install dependency
 
 ```bash
 pip install -r requirements.txt
@@ -170,141 +184,174 @@ pip install -r requirements.txt
 
 ---
 
-## Menjalankan Program
+# ▶️ Menjalankan Program
 
-### GUI Utama
+## Menjalankan GUI
 
 ```bash
-python gui_app.py
+python gui_app_v2.py
 ```
 
-### Training Model Audio
+## Training Model Audio
 
 ```bash
 python audio_train.py
 ```
 
-### Training Model Visual
+## Training Model Visual
 
 ```bash
 python visual_train.py
 ```
 
-### Pengujian Audio
+---
 
-```bash
-python audio_test_mic.py
-```
+# 📊 Hasil Penelitian
 
-### Pengujian Visual
-
-```bash
-python visual_test.py
-```
-
-### Pengujian Fusion
-
-```bash
-python fusion_test.py
-```
+| Model | Metode | Hasil |
+|--------|---------|--------|
+| Audio | MFCC + Random Forest | **Akurasi 75.56%** |
+| Visual | CNN (FER2013) | **Akurasi 87.48%** |
+| Fusion | Weighted Late Fusion | **Deteksi lebih stabil secara real-time** |
 
 ---
 
-## Hasil Penelitian
+# 🖥️ Tampilan Sistem
 
-### Model Audio
+GUI menyediakan beberapa fitur berikut:
 
-Metode:
-- MFCC
-- Random Forest
-
-Akurasi:
-- 70.37%
-
-### Model Visual
-
-Metode:
-- CNN
-- FER2013 Dataset
-
-Akurasi:
-- 77.84%
-
-### Model Fusion
-
-Menggabungkan prediksi audio dan visual secara real-time untuk meningkatkan kestabilan deteksi emosi.
+- ✅ Mode Audio
+- ✅ Mode Visual
+- ✅ Mode Fusion
+- ✅ Real-Time Detection
+- ✅ Confidence Score
+- ✅ Bounding Box Wajah
+- ✅ Pemilihan Microphone
+- ✅ Speaker ON / OFF
+- ✅ Riwayat Prediksi
 
 ---
 
-## Tampilan Sistem
-
-Fitur yang tersedia pada GUI:
-
-- Mode Visual
-- Mode Audio
-- Mode Fusion
-- Tampilan Confidence
-- Bounding Box Wajah
-- Pemilihan Mikrofon
-- Sound ON/OFF
-
----
-
-# Screenshot Aplikasi
+# 📸 Screenshot Aplikasi
 
 ## Tampilan Menu Utama
 
-![Menu Utama](docs/menu_utama.png)
-
-## Mode Audio
-
-![Mode Audio](docs/mode_audio.png)
-
-## Mode Visual
-
-![Mode Visual](docs/mode_visual.png)
-
-## Mode Fusion
-
-![Mode Fusion](docs/mode_fusion.png)
-
-## Pengaturan Output Suara
-
-![Sound Setting](docs/sound_setting.png)
+![Menu Utama](docs/tampilan_menu_utama.png)
 
 ---
 
-## Documentation
+## GUI Utama
 
-User Manual:
+![GUI](docs/gui_app.png)
 
-- docs/Buku_Manual_Aplikasi.docx
+---
 
-This document contains:
-- Installation guide
-- Application usage
-- Audio mode
-- Visual mode
-- Fusion mode
+## Mode Audio
+
+![Mode Audio](docs/mode_Audio.png)
+
+---
+
+## Mode Visual
+
+![Mode Visual](docs/mode_Visual.png)
+
+---
+
+## Mode Fusion
+
+![Mode Fusion](docs/mode_Fusion.png)
+
+---
+
+## Pengaturan Speaker
+
+![Speaker](docs/output_speaker.png)
+
+---
+
+# 🔄 Alur Sistem
+
+```text
+               Microphone
+                    │
+                    ▼
+                  MFCC
+                    │
+                    ▼
+            Random Forest
+                    │
+                    ▼
+            Audio Prediction
+                    │
+                    ├────────────────┐
+                    │                │
+                    ▼                ▼
+                Webcam             CNN
+                    │                │
+                    ▼                ▼
+          Visual Prediction
+                    │
+                    ▼
+       Weighted Late Fusion
+                    │
+                    ▼
+          Final Emotion Output
+```
+
+---
+
+# 🛠️ Teknologi yang Digunakan
+
+- Python
+- TensorFlow
+- OpenCV
+- Scikit-learn
+- Librosa
+- NumPy
+- Tkinter
+- Joblib
+- SoundDevice
+- Matplotlib
+
+---
+
+# 📚 Dokumentasi
+
+📄 **Buku Manual Aplikasi**
+
+[Buka Buku Manual](docs/Buku%20Manual%20Aplikasi_.docx)
+
+Dokumentasi meliputi:
+
+- Panduan instalasi aplikasi
+- Cara menjalankan sistem
+- Mode Audio
+- Mode Visual
+- Mode Fusion
+- Pengaturan Speaker
 - Troubleshooting
 
 ---
 
-## Pengembang
+# 👨‍💻 Pengembang
 
 **M. Afif Fuadie Yusuf**
 
 Program Studi Teknik Mekatronika  
 Politeknik Negeri Batam
 
-Tugas Akhir 2026
+**Tugas Akhir 2026**
 
 ---
 
-## Lisensi
+# 📄 Lisensi
 
-Project ini dikembangkan untuk kebutuhan penelitian dan Tugas Akhir Program Studi Teknik Mekatronika Politeknik Negeri Batam.
+Project ini dikembangkan sebagai bagian dari penelitian **Tugas Akhir Program Studi Teknik Mekatronika Politeknik Negeri Batam**.
 
-Copyright © 2026
+Copyright © 2026  
+**M. Afif Fuadie Yusuf**
 
-M. Afif Fuadie Yusuf
+---
+
+⭐ **Jika repository ini bermanfaat, silakan berikan Star ⭐ pada repository ini.**
